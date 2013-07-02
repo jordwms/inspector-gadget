@@ -1,0 +1,192 @@
+.round-top {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-o-border-top-left-radius: 5px;
+	-o-border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+.round-bottom {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-o-border-bottom-left-radius: 5px;
+	-o-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+html,body {
+	font-family: sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*****************************
+ *  Master Header/Footer
+ *****************************/
+
+header {
+	text-align: center;
+	padding: 1.4em;
+	font-size: 1.6em;
+	font-weight: 600;
+	color: rgb(22,22,22);
+}
+a {
+	color: rgb(60,60,60);
+	text-decoration: none;
+	font-size: 80%;
+}
+a:hover {
+	color: rgb(255,100,7);
+}
+.loginBox {
+	width: 85%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+input[type=text], input[type=email], input[type=password] {
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid rgb(129,101,92);
+	font-size: 1.4em;
+	line-height: 1.6em;
+
+	outline: none;
+	width: 92%;
+	-webkit-box-flex: 1;
+	-webkit-box-shadow: none;
+
+	padding: 4%;
+	height: 1.6em;
+	vertical-align: middle;
+}
+input[type=password] {
+	border-top: none;
+}
+
+.label-wrapper {
+	text-align: center;
+	display: none;
+	visibility: hidden;
+}
+.oldie .label-wrapper {
+	display: block;
+	visibility: visible;
+}
+label {
+	color: rgb(51,51,51);
+	font-size: 1em;
+	height: 100%;
+	line-height: 30px;
+}
+button {
+	font-size: 1.4em;
+	border: 1px none rgb(129,101,92);
+	background-color: rgb(123,123,137);
+	padding: 4%;
+	width: 100%;
+}
+button:active, button:hover {
+	background-color: rgb(0,0,170);
+}
+.button-wrapper{
+	margin-top: 1em;
+}
+
+.errors {
+	border: 1px none rgb(129,101,92);
+	color: rgb(255,255,255);
+	font-size: .8em;
+	margin-bottom: 15px;
+	padding: 11px 11px 12px 11px;
+	text-align: center;
+	width: 100%;
+}
+
+
+@media only screen and (min-width: 540px) {
+	.loginBox {
+		padding-top: 50px;
+		width: 75%
+	}
+	input[type=text], input[type=email], input[type=password] {
+		width: 94%;
+		padding: 3%;
+	}
+	button{
+		padding: 3%;
+	}
+}
+
+
+@media only screen and (min-width: 1024px) {
+	h1 {
+		font-size: 2em;
+	}
+	.loginBox {
+		width: 45%;
+	}
+	input[type=text], input[type=email], input[type=password] {
+		width: 95%;
+		padding: 2.5%;
+	}
+	button{
+		padding: 2.5%;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	h1 {
+		font-size: 2em;
+	}
+	.loginBox {
+		width: 35%;
+	}
+	input[type=text], input[type=email], input[type=password] {
+		width: 96%;
+		padding: 2%;
+	}
+	button{
+		padding: 2%;
+	}
+}
+
+/* ==== Applus Colors =======================================================
+   != cool
+   ========================================================================== */
+
+.applus-gray {
+  background-color: rgb(232,232,232);
+}
+.applus-gray-text {
+  color: rgb(232,232,232);
+}
+
+.applus-orange {
+  background-color: rgb(255,100,7);
+}
+.applus-orange-text {
+  color: rgb(255,100,7);
+}
+
+.applus-blue {
+  background-color: rgb(56,0,147);
+}
+.applus-blue-text {
+  color: rgb(56,0,147);
+}
+
+.applus-brown {
+  background-color: rgb(129,101,92);
+}
+.applus-brown-text {
+  color: rgb(129,101,92);
+}
