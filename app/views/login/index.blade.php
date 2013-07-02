@@ -38,5 +38,6 @@
 				<button type="submit" class="round-top round-bottom">{{ trans('login.login') }}</button>
 			</div>
 		{{ Form::close() }}
+		{{ HTML::link('login/create_profile', 'Create New User') }}
 	</div>
 </body>
