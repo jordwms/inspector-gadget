@@ -85,6 +85,15 @@ return array(
 
 	),
 
+	// Created for Mongovel 
+	'mongodb' => array(
+	    'default' => array(
+	        'host'     => 'dev-mongodb.applusrtd.net',
+	        'port'     => 27017,
+	        'database' => 'inspector_gadget',
+	    )
+	),
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Migration Repository Table
