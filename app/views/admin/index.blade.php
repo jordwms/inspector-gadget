@@ -39,8 +39,6 @@
 			{{ HTML::link('/', 'Home') }}
 			|
 			{{ HTML::link('logout', 'Logout') }}
-			|
-			{{ HTML::link('admin/create_profile', 'Create New User') }}
 		</div>
 		
 	</div>
