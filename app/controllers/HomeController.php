@@ -30,9 +30,10 @@ class HomeController extends BaseController {
 		if( Input::has('username') && Input::has('email') ) {
 			$email = Input::get('email');
 
+			// If the email matches a simple email formatting schema...
 			if( preg_match('(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})', $email) ) {
 				// be happy!
-				var_dump('WINNER!'); die;
+				// var_dump('WINNER!'); die;
 			}
 
 			// Check that the submitted username is unique...
@@ -45,27 +46,30 @@ class HomeController extends BaseController {
 			strtok($email, '@');
 			$domain = strtok('@');
 
-			foreach ($companies as $company) {
-				// If $_POST['email'] domain matches registered domains, create the account. Note: case insensitive.			
-				if ( preg_match("/^".$company->domain."$/i", $domain) ) {
-					$valid_domain = TRUE;
-					var_dump("it's a match!"); die;
+			// A new user must be part of a registered company
+			// foreach ($companies as $company) {
+			// 	// If $_POST['email'] domain matches registered domains, create the account. Note: case insensitive.			
+			// 	if ( preg_match("/^".$company->domain."$/i", $domain) ) {
+			// 		$valid_domain = TRUE;
+			// 		var_dump("it's a match!"); die;
 
-				}
-			}
+			// 	}
+			// }
 
 			if(is_null($unique)) {
 				$new = Input::except(array('_token', 'confirm_password') );
 
 				// Hash password and insert enw entry to mongodb
-				if( strcomp(Input::get('confirm_password'), $new['password']) ) {
+				# This seems exceedingly unsafe - pw's should be hashed on form submit and decrypted just before this step...
+				if( (Input::get('confirm_password') == $new['password']) && !is_null($new['password']) ) {
 					$new['password'] = Hash::make($new['password']);
 				    Users::insert($new);
 
-					return "Profile created successfully.";
+				    return Redirect::to('login'); 
+					// return "Profile created successfully.";
 				} else {
-					return Redirect::to('login.create_profile')
-            						->with('incorrect_password', TRUE);
+					return Redirect::to('login/create_profile')
+            						->with('message', 'password doesnt match');
 				}
 			    
 			}
