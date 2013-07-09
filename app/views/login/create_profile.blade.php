@@ -2,7 +2,10 @@
 	@if (Session::has('login_errors'))
         <span class="error">Username or password incorrect.</span>
 	@endif
-	{{ Form::open(array('url' => '/admin/create_profile')) }}
+	@if (Session::has('message'))
+        <span class="error">{{ Session::get('message') }}</span>
+	@endif
+	{{ Form::open(array('url' => '/login/create_profile')) }}
 		<div><label>Username</label></div>
 		<div>
 			<input autocorrect="off" autocapitalize="off" placeholder="first.last" type="text" name="username" id="username">
