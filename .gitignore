@@ -1,3 +1,10 @@
+# Files and folders
+bootstrap/compiled.php
 /vendor
+
+# Composer files except Composer.json
+composer.lock
 composer.phar
+
+# Indexing Files
 .DS_Store
