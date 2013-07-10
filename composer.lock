@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5f4fb65cecf43da689abed6fc20358f5",
+    "hash": "7b706764cdb924bd0c37d4cd6f5f3e3b",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -619,6 +619,58 @@
             "time": "2013-04-30 19:58:08"
         },
         {
+            "name": "julien-c/mongovel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/julien-c/mongovel.git",
+                "reference": "5391b2d404cdbb9c6efaeae67e5404af9a031739"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/julien-c/mongovel/zipball/5391b2d404cdbb9c6efaeae67e5404af9a031739",
+                "reference": "5391b2d404cdbb9c6efaeae67e5404af9a031739",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mongo": "*",
+                "illuminate/container": ">=4.0,<5.0",
+                "illuminate/support": ">=4.0,<5.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mongovel": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                },
+                {
+                    "name": "Julien Chaumond",
+                    "email": "chaumond@gmail.com"
+                }
+            ],
+            "description": "A Laravel-ish wrapper to the PHP Mongo driver",
+            "keywords": [
+                "Laravel 4",
+                "laravel",
+                "mongo",
+                "mongodb"
+            ],
+            "time": "2013-06-14 09:48:09"
+        },
+        {
             "name": "laravel/framework",
             "version": "4.0.x-dev",
             "source": {
@@ -789,6 +841,104 @@
                 "psr-3"
             ],
             "time": "2013-04-23 10:09:48"
+        },
+        {
+            "name": "navruzm/laravel-mongo-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/navruzm/laravel-mongo-auth.git",
+                "reference": "9de5c640dd4794dd29f9c797db4812f90a4a8bc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/navruzm/laravel-mongo-auth/zipball/9de5c640dd4794dd29f9c797db4812f90a4a8bc3",
+                "reference": "9de5c640dd4794dd29f9c797db4812f90a4a8bc3",
+                "shasum": ""
+            },
+            "require": {
+                "navruzm/lmongo": "master-dev",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/auth": "4.0.*",
+                "mockery/mockery": "0.7.2",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MongoAuth": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mustafa Navruz",
+                    "email": "mustafanavruz@gmail.com"
+                }
+            ],
+            "description": "MongoDB Auth Driver for Laravel 4",
+            "homepage": "http://github.com/navruzm/laravel-mongo-auth/",
+            "keywords": [
+                "L4",
+                "Laravel 4",
+                "laravel",
+                "mongodb"
+            ],
+            "time": "2013-03-28 06:25:35"
+        },
+        {
+            "name": "navruzm/lmongo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/navruzm/lmongo.git",
+                "reference": "d10a621a1aff63bc1afe917acaa94e3d30093ba0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/navruzm/lmongo/zipball/d10a621a1aff63bc1afe917acaa94e3d30093ba0",
+                "reference": "d10a621a1aff63bc1afe917acaa94e3d30093ba0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "4.0.x",
+                "illuminate/support": "4.0.x",
+                "nesbot/carbon": "1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/cache": "4.0.x",
+                "mockery/mockery": "0.7.2",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "LMongo": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mustafa Navruz",
+                    "email": "mustafanavruz@gmail.com"
+                }
+            ],
+            "description": "LMongo is a MongoDB package for Laravel 4.",
+            "homepage": "http://github.com/navruzm/lmongo/",
+            "keywords": [
+                "Laravel 4",
+                "mongodb"
+            ],
+            "time": "2013-06-28 08:26:56"
         },
         {
             "name": "nesbot/carbon",

@@ -11,11 +11,11 @@ return array(
 	| This drivers manages the retrieval and authentication of the users
 	| attempting to get access to protected areas of your application.
 	|
-	| Supported: "database", "eloquent"
+	| Supported: "database", "eloquent", "mongo"
 	|
 	*/
 
-	'driver' => 'eloquent',
+	'driver' => 'mongo',
 
 	/*
 	|--------------------------------------------------------------------------
