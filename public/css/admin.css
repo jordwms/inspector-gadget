@@ -1,0 +1,129 @@
+.round-top {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-o-border-top-left-radius: 5px;
+	-o-border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+.round-bottom {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-o-border-bottom-left-radius: 5px;
+	-o-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+html,body {
+	font-family: sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-image: url('http://s5.postimg.org/4bjvuwds7/magnifyingglass_header.png');
+	background-repeat: no-repeat;
+}
+
+
+/*****************************
+ *  Master Header/Footer
+ *****************************/
+
+.admin, .hello {
+	width: 50%;
+	text-align: center;
+	margin: 60px auto 0 auto;
+}
+.hello button {
+	font-size: 1.7em;
+	padding: 3%;
+}
+.admin_buttons {
+	text-align: left;
+	padding: 25px 0 0 600px;
+}
+header {
+	text-align: center;
+	padding: 1.4em;
+	font-size: 1.6em;
+	font-weight: 600;
+	color: rgb(22,22,22);
+}
+a {
+	color: rgb(60,60,60);
+	text-decoration: none;
+	font-size: 80%;
+}
+a:hover {
+	color: rgb(255,100,7);
+}
+button a:hover {
+	color: rgb(60,60,60);
+}
+
+.admin table {
+	width: 100%;
+	font-size: 0.5em;
+}
+button {
+	font-size: 1.1em;
+	border: 1px none rgb(129,101,92);
+	background-color: rgb(123,123,137);
+	padding: 10px;
+}
+button:active, button:hover {
+	background-color: rgb(96,146,181);
+}
+
+
+@media only screen and (min-width: 540px) {
+	
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* ==== Applus Colors =======================================================
+   != cool
+   ========================================================================== */
+
+.applus-gray {
+  background-color: rgb(232,232,232);
+}
+.applus-gray-text {
+  color: rgb(232,232,232);
+}
+
+.applus-orange {
+  background-color: rgb(255,100,7);
+}
+.applus-orange-text {
+  color: rgb(255,100,7);
+}
+
+.applus-blue {
+  background-color: rgb(56,0,147);
+}
+.applus-blue-text {
+  color: rgb(56,0,147);
+}
+
+.applus-brown {
+  background-color: rgb(129,101,92);
+}
+.applus-brown-text {
+  color: rgb(129,101,92);
+}

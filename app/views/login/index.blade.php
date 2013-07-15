@@ -18,9 +18,6 @@
 <body lang="en" class="applus-gray">
 	<div class="loginBox">
 		<!-- check for login errors flash var -->
-	    @if (Session::has('login_errors'))
-	        <span class="error">Username or password incorrect.</span>
-	    @endif
 		<header>
 			Inspector Gadget
 		</header>
@@ -39,5 +36,9 @@
 			</div>
 		{{ Form::close() }}
 		{{ HTML::link('login/create_profile', 'Create New User') }}
+
+		@if (Session::has('login_errors'))
+	        <div class="errors">Username or password incorrect.</div>
+	    @endif
 	</div>
 </body>

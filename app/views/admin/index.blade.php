@@ -12,15 +12,18 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1,target-densityDpi=device-dpi">
 
-	{{ HTML::style('css/login.css') }}
 	{{ HTML::style('css/admin.css') }}
 	<!-- end CSS-->
 </head>
-<body>
+<body lang="en" class="applus-gray">
+	<div class="admin_buttons">
+		<button type="button" class="round-top round-bottom">{{ HTML::link('/', 'Home') }}</button>
+		<button type="button" class="round-top round-bottom">{{ HTML::link('logout', 'Logout') }}</button>
+	</div>
 	<div class="admin">
-		<p>
+		<header>
 			Admin Panel
-		<p>
+		<header>
 		<table>
 			<thead>
 				<th>Users</th>
@@ -35,11 +38,5 @@
 				@endforeach
 			</tbody>
 		</table>
-		<div>
-			{{ HTML::link('/', 'Home') }}
-			|
-			{{ HTML::link('logout', 'Logout') }}
-		</div>
-		
 	</div>
 </body>
